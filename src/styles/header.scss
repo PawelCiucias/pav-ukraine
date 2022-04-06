@@ -1,0 +1,22 @@
+header{
+    background-color: rgba(0,255,255, .25);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1;
+    height: 100px;
+    transition: .4s;    
+    + * {
+        margin-top: 200px;
+
+    }
+
+    &.pav-is-top{
+        height: 100vh;
+        + * {
+            margin-top: 200vh;
+        }   
+    }
+    
+}

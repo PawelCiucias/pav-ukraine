@@ -1,0 +1,12 @@
+@mixin  parrallax-mixin($id, $url, $colour) {
+    .parallax-#{$id} {
+        background: url($url);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        border-top: 2em solid $colour;
+    }    
+}
+
+@include parrallax-mixin(one,'https://source.unsplash.com/featured/?nature' ,blue);
