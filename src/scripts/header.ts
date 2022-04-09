@@ -6,10 +6,9 @@ let header: HTMLHeadElement;
 })();
 
 function documentScrolled(){ 
-    // const topOffset = window.scrollY;
-    // console.log(topOffset);
-    // if(topOffset === 0)
-    //     header.classList.add("pav-is-top");
-    // else 
-    //     header.classList.remove("pav-is-top");
+    console.log("scroll", window.scrollY);
+    if(window.scrollY === 0)
+        header.classList.remove("pav-compact");
+    else 
+        header.classList.add("pav-compact");
 };

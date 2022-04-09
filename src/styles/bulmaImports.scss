@@ -1,2 +1,13 @@
 @charset "utf-8";
+// Set your brand colors
+$ukrainianBlue: #0041A3;
+$ukrainianYellow: #FDB800;
+
+
+$primary: $ukrainianBlue;
+$link: $ukrainianYellow;
+
 @import "./../node_modules/bulma/bulma";
+
+
+
