@@ -4,7 +4,7 @@ $ukrainianYellow: #FDB800;
 @mixin  parrallax-mixin($id, $url, $colour) {
     .parallax-#{$id} {
         
-        background: url($url);
+      //  background: url($url);
         background-attachment: fixed;
         background-position: center;
         background-repeat:no-repeat;
