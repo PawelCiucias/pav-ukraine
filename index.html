@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amis de Ukraine</title>
+  <title>Help Ukraine Lausanne</title>
   <link href="./node_modules/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
-  <link href="./src/styles/header.scss" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -15,15 +15,15 @@
     <nav class="level is-mobile">
 
       <p class="level-item has-text-centered">
-        <button class="button is-hidden-mobile is-link">Volunteer</button>
-        <button class="button is-hidden-tablet is-small is-link">Volunteer</button>
+        <a href="https://t.me/+M2hX4rSUmlUxYTBk" target="_blank" class="button is-hidden-mobile is-link">Volunteer</a>
+        <a href="https://t.me/+M2hX4rSUmlUxYTBk" target="_blank" class="button is-hidden-tablet is-small is-link">Volunteer</a>
       </p>
       <p>
         <img src="/src/assets/logo_round.png" alt="logo">
       </p>
       <p class="level-item has-text-centered">
-        <button class="button is-link is-hidden-mobile">Donate</button>
-        <button class="button is-link is-hidden-tablet is-small">Donate</button>
+        <button id="donateButton" class="button is-link is-hidden-mobile">Donate</button>
+        <button id="smallDonateButton" class="button is-link is-hidden-tablet is-small">Donate</button>
       </p>
 
     </nav>
@@ -31,10 +31,10 @@
 
   <section class="hero is-medium">
     <div class="hero-body container has-text-centered">
-      <h1 class="is-size-1">
+      <h1 class="title is-size-1">
         We've already come a long way
       </h1>
-      <p class="subtitle">
+      <p class="subtitle mt-1">
         To do so, the following actions were put in place:
         a collection point to receive, sort, pack and send donations (including first necessities, medical aids, food,
         hygiene products, sleeping essentials, and more) directly to the peoples in Ukraine.
@@ -155,61 +155,88 @@
 
   <section class="hero is-medium has-text-centered">
     <div class="hero-body container">
-      <p class="title">
-        Thank you to our corporate sponsers
-      </p>
-      <div class="columns is-centered is-multiline is-mobile">
-        <div class="column is-narrow">One</div>
-        <div class="column is-narrow">Two</div>
-        <div class="column is-narrow">Three</div>
-        <div class="column is-narrow">Four</div>
-        <div class="column is-narrow">Five</div>
-        <div class="column is-narrow">six</div>
-        <div class="column is-narrow">seven</div>
-        <div class="column is-narrow">Eight</div>
-        <div class="column is-narrow">Nine</div>
-        <div class="column is-narrow">Ten</div>
-        <div class="column is-narrow">Eleven</div>
-        <div class="column is-narrow">Twelve</div>
-        <div class="column is-narrow">Thirteen</div>
-        <div class="column is-narrow">Fourteen</div>
+      <h1 class="title is-size-1">
+        Thank you to all of our corporate sponsers who've helped us with donations, transportation, financing, space and so much more
+      </h1>
+      <div class="columns mt-5 is-vcentered is-centered is-multiline">
+        <div class="column">
+          <img src="./src/assets/sponsers/Amaretto.png" alt="Amaretto" style="max-height: 50px;">
+        </div>
+        <div class="column">
+          <img src="./src/assets/sponsers/Brotherfields.png" alt="Brotherfields">
+        </div>
+        <div class="column">
+          <img src="./src/assets/sponsers/CartoDuCoeur.png" alt="CartoDuCoeur">
+        </div>
+        <div class="column">
+          <img src="./src/assets/sponsers/Manor.png" alt="Manor">
+        </div>
+        <div class="column">
+          <img src="./src/assets/sponsers/Medtronic.png" alt="Medtronic">
+        </div>
+        <div class="column">
+          <img src="./src/assets/sponsers/Qoqa.png" alt="Qoqa">
+        </div>
+        <div class="column">
+          <img src="./src/assets/sponsers/Rotary.png" alt="Rotary">
+        </div>
+        
 
       </div>
     </div>
 
   </section>
 
-  <section class="hero is-medium">
+  <section id="donationsSection" class="hero is-medium">
     <div class="hero-body parallax-two has-text-centered">
-      <p class="title">
-        Together we can do so much more
-      </p>
-    </div>
-  </section>
-
-  <section class="hero is-medium">
-    <div class="hero-body has-text-centered">
-      <div class="container">
+         <div class="container">
+        <h1 class="title is-size-1 has-text-light">
+          Donations can be made via twint safely through our founders:
+        </h1>
+        <p class="subtitle mt-1 has-text-light">
+          Mention: "Help Ukraine Lausanne"
+        </p>
         <div class="columns is-vcentered is-centered is-multiline">
-          <div class="column is-centered">
-            
-              <img src="./src/assets/Iban-logo.png">
-            
+
+          <div class="column is-centered">  
             <div class="box">
-              <img src="./src/assets/Twint QR.svg">
+              Emma: +41 79 426 33 73
             </div>
           </div>
+
           <div class="column">
-            <img src="./src/assets/twint-logo.svg">
-            <div class="box">
             
-              <img src="./src/assets/Twint QR.svg">
+            <div class="box">
+              Daria: +41 76 773 07 79
   
             </div>
           </div>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <section  class="hero is-medium has-background-light">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-size-1">
+        For the latest news follow us
+      </h1>
+      <div class="container mt-2">
+        <div class="columns is-multiline is-centered is-vcentered">
+          <div class="column is-narrow has-text-centered">
+            <a href="https://www.facebook.com/help.ukraine.lausanne" target="_blank">
+              <img src="./src/assets/facebook.png" style="max-width: 150px;" alt="facebook">
+            </a>
+          </div>
+          <div class="column is-narrow has-text-centered">
+            <a href="https://www.instagram.com/help.ukraine.lausanne/" target="_blank">
+              <img src="./src/assets/instagram.png" style="max-width: 150px;" alt="Instagram">
+            </a>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </section>
 
@@ -250,44 +277,65 @@
 
   <section class="hero is-medium">
     <div class="hero-body container has-text-centered">
-      <p class="title">
+      <h1 class="title is-size-1">
         Our Promise
-      </p>
-      <p class="subtitle">
-        We promise to continue to put as much energy as we have invested so far to help the Ukrainians still stuck in
-        the camps at the border and to make life a little more pleasant for the Ukrainians arriving in our country.
-        As a donor or sponsor, you will receive punctual updates via email if you wish to in order to follow the
-        achievement of our association and share them.
+      </h1>
+      <p class="subtitle mt-1">
+        To date, our founders and volunteers have invested unrelenting energy toward helping the Ukrainian people. 
+        We vow to continue to aid those refugees still helplessly 'stuck' at the Polish border through regular deliveries. 
+        Through our free shop, we will continue to ease life for the Ukranians newly arriving in our country and 
+        to make life for them a little more pleasant.
+        As a donor or sponsor, you can greatly help us in this aim! 
+        You will then receive punctual updates on the good your donation is creating.
+        Via this email you can share in the achievements of our association, as well as share them with others.
       </p>
     </div>
   </section>
 
-  <!-- <div class="hero-foot">
-        <nav class="tabs is-boxed is-fullwidth">
-          <div class="container">
-            <ul>
-              <li class="is-active">
-                <a>Overview</a>
-              </li>
-              <li>
-                <a>Modifiers</a>
-              </li>
-              <li>
-                <a>Grid</a>
-              </li>
-              <li>
-                <a>Elements</a>
-              </li>
-              <li>
-                <a>Components</a>
-              </li>
-              <li>
-                <a>Layout</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div> -->
+  <section class="hero is-medium">
+    <div class="hero-body parallax-four has-text-centered">
+      <!-- <h1 class="title is-size-1">
+        Who we are and what we stand for!
+      </h1> -->
+    </div>
+  </section>
+
+  <section class="hero is-medium">
+    <div class="hero-body container has-text-centered">
+      <h1 class="title is-size-1">
+        About us
+      </h1>
+      <p class="subtitle mt-1">
+        The “Help Ukraine Lausanne” (HUL) Association was founded by 3 volunteers with a common objective; help the Ukrainians 
+        affected by the war in Ukraine and the ones arriving in Lausanne who are fleeing their country. Now we are a group of 
+        more than 200 volunteers. Our volunteers are of various origins, spanning generations, coming fom diverse backgrounds 
+        all in a common goal: To work hand-in-hand together to provide as much aid as is possible. 
+        Come find us at Rue de Genève 97A, 1004 Lausanne or join us on our telegram group.
+      </p>
+    </div>
+  </section>
+  
+  <footer class="footer has-background-dark has-text-light">
+    <div class="container">
+      <div class="columns is-multiline is-centered is-vcentered">
+        <!-- <div class="column is-narrow has-text-centered">
+          Give us a Call<br /><a class="button is-ghost" href="tel:+">+</a>
+        </div> -->
+        <div class="column is-narrow has-text-centered">
+          Drop us an Email<br /><a class="button is-ghost"  href="mailto:Info@helpukrainelausanne.ch">helpukrainelausanne.ch</a>
+        </div>
+        <div class="column is-narrow has-text-centered">
+          Come visit us at<br /><a class="button is-ghost"  href="https://www.google.com/maps/place/Rue+de+Gen%C3%A8ve+97,+1004+Lausanne,+Switzerland/@46.524905,6.612062,15z/data=!4m5!3m4!1s0x478c31d11ab8d001:0x9d7edfa2e38fad03!8m2!3d46.524905!4d6.6120621?hl=ch-fr">Rue de Genève 97A 1004 Lausanne</a>
+        </div>
+        <div class="column is-narrow has-text-centered">
+          Free Lunch for Ukrainians<br /><a class="button is-ghost" target="_blank"  href="./aprilLunch.pdf">April 2022</a>
+        </div>
+      </div>
+      
+        
+      
+    </div>
+  </footer>
 
   <script type="module" src="/src/main.ts"></script>
 </body>

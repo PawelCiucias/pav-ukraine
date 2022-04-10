@@ -1,7 +1,9 @@
+@charset "UTF-8";
 $ukrainianBlue: #0041A3;
 $ukrainianYellow: #FDB800;
 @mixin  parrallax-mixin($id, $url, $colour) {
     .parallax-#{$id} {
+        
         background: url($url);
         background-attachment: fixed;
         background-position: center;
@@ -10,7 +12,9 @@ $ukrainianYellow: #FDB800;
       //  border-top: 2em solid $colour;
     }    
 }
-
-@include parrallax-mixin(one,'https://source.unsplash.com/featured/?future' ,$ukrainianBlue);
-@include parrallax-mixin(two,'https://source.unsplash.com/featured/?happy' ,$ukrainianYellow);
-@include parrallax-mixin(three,'https://source.unsplash.com/featured/?building' ,$ukrainianBlue);
+// @include parrallax-mixin(one,'./src/assets/shop.jpg' ,$ukrainianBlue);
+@include parrallax-mixin(one,'./src/assets/outsideBoxes.jpg' ,$ukrainianBlue);
+@include parrallax-mixin(two,'./src/assets/emmaAndDaria.jpg' ,$ukrainianYellow);
+// @include parrallax-mixin(three,'https://source.unsplash.com/featured/?building' ,$ukrainianBlue);
+@include parrallax-mixin(three,'./src/assets/center.jpeg' ,$ukrainianBlue);
+@include parrallax-mixin(four,'./src/assets/aboutUs.jpeg' ,$ukrainianYellow);
