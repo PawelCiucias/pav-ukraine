@@ -15,13 +15,15 @@
     <nav class="level is-mobile">
 
       <p class="level-item has-text-centered">
-        <button class="button is-responsive is-link">Volunteer</button>
+        <button class="button is-hidden-mobile is-link">Volunteer</button>
+        <button class="button is-hidden-tablet is-small is-link">Volunteer</button>
       </p>
       <p>
         <img src="/src/assets/logo_round.png" alt="logo">
       </p>
       <p class="level-item has-text-centered">
-        <button class="button is-link">Donate</button>
+        <button class="button is-link is-hidden-mobile">Donate</button>
+        <button class="button is-link is-hidden-tablet is-small">Donate</button>
       </p>
 
     </nav>
@@ -215,26 +217,26 @@
     <div class="hero-body parallax-three">
       <div class="container">
         <div class="columns">
-          <div class="column">
+          <div class="column is-two-fifths-widescreen is-full-mobile">
             <div class="mapouter">
-              <div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas"
+              <div class="gmap_canvas">
+                <iframe width="100%" height="500" id="gmap_canvas"
                   src="https://maps.google.com/maps?q=Lausanne.%20Rue%20de%20Gen%C3%A8ve%2097A&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                  href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br>
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
                 <style>
                   .mapouter {
                     position: relative;
                     text-align: right;
-                    height: 500px;
-                    width: 500px;
+                    height: 100%;
+                    width: 100%;
                   }
-                </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                </style>
                 <style>
                   .gmap_canvas {
                     overflow: hidden;
                     background: none !important;
-                    height: 500px;
-                    width: 500px;
+                    height: 100%;
+                    width: 100%;
                   }
                 </style>
               </div>
