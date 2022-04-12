@@ -4,6 +4,7 @@ header{
     top:0;
     width: 100%;
     z-index: 1;  
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.42);
     > nav {
         max-height: 100px;
         transition: 1s;
